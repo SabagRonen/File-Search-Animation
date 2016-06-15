@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_zoom"
+        android:title="zoom"/>
+
+    <item
+        android:id="@+id/drawer_clockwise"
+        android:title="clockwise"/>
+
+    <item
+        android:id="@+id/drawer_fade"
+        android:title="fade"/>
+
+    <item
+        android:id="@+id/drawer_blink"
+        android:title="blink"/>
+
+    <item
+        android:id="@+id/drawer_move"
+        android:title="move"/>
+
+    <item
+        android:id="@+id/drawer_slide"
+        android:title="slide"/>
+
+</menu>

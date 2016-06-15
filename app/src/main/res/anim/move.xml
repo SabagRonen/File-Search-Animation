@@ -6,7 +6,7 @@
 
     <translate
         android:fromXDelta="0%p"
-        android:toXDelta="12%p"
+        android:toXDelta="5%p"
         android:duration="1500"
         android:repeatMode="restart"
         android:repeatCount="infinite"/>
