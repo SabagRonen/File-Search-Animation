@@ -20,14 +20,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile0"
-                android:layout_marginLeft="-27dp"
+                android:layout_marginLeft="@dimen/hiddenSmallFileMargin"
                 android:src="@drawable/small_doc" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile1"
-                android:layout_marginLeft="13dp"
+                android:layout_marginLeft="@dimen/smallFileMargin"
                 android:src="@drawable/small_doc" />
 
             <ImageView
@@ -35,16 +35,17 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile2"
                 android:layout_toRightOf="@id/smallFile1"
-                android:layout_marginLeft="13dp"
+                android:layout_marginLeft="@dimen/smallFileMargin"
                 android:src="@drawable/small_doc" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile3"
-                android:layout_marginLeft="13dp"
+                android:layout_marginLeft="@dimen/smallFileMargin"
                 android:layout_toRightOf="@id/smallFile2"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/small_doc"
+                android:paddingRight="13dp" />
 
         </RelativeLayout>
 
@@ -52,28 +53,24 @@
             android:id="@+id/magnifyingGlass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="13dp"
             android:layout_toRightOf="@id/first">
 
             <FrameLayout
-                android:layout_width="93dp"
-                android:layout_height="93dp"
-                android:background="@drawable/big_circle">
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="21dp">
 
                 <ImageView
                     android:id="@+id/bigFile1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
-                    android:layout_marginTop="16dp"
                     android:src="@drawable/big_file" />
 
                 <ImageView
                     android:id="@+id/bigFile2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
-                    android:layout_marginTop="16dp"
                     android:src="@drawable/big_file" />
             </FrameLayout>
 
@@ -84,24 +81,24 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/first"
-            android:layout_marginLeft="-33dp"
+            android:layout_marginLeft="@dimen/secondPartOfImagesMargin"
             android:layout_toRightOf="@id/magnifyingGlass">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile4"
-                android:layout_marginLeft="-27dp"
+                android:layout_marginLeft="@dimen/hiddenSmallFileMargin"
                 android:src="@drawable/small_doc" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile5"
-                android:layout_marginLeft="13dp"
+                android:layout_marginLeft="@dimen/smallFileMargin"
                 android:layout_toRightOf="@id/smallFile4"
                 android:src="@drawable/small_doc" />
 
@@ -110,14 +107,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile6"
                 android:layout_toRightOf="@id/smallFile5"
-                android:layout_marginLeft="13dp"
+                android:layout_marginLeft="@dimen/smallFileMargin"
                 android:src="@drawable/small_doc" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile7"
-                android:layout_marginLeft="13dp"
+                android:layout_marginLeft="@dimen/smallFileMargin"
                 android:layout_toRightOf="@id/smallFile6"
                 android:src="@drawable/small_doc" />
 

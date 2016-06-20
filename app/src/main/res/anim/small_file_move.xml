@@ -2,10 +2,10 @@
 <set
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:anim/linear_interpolator"
-    android:fillAfter="true">
+    android:fillAfter="false">
 
     <translate
-        android:fromXDelta="-100%"
-        android:toXDelta="0%"
-        android:duration="500" />
+        android:fromXDelta="0%"
+        android:toXDelta="150%"
+        android:duration="@integer/animationDuration" />
 </set>

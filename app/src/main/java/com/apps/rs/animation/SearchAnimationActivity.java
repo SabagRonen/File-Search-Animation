@@ -12,7 +12,7 @@ public class SearchAnimationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.search_animation_activity);
     }
 
     @Override
@@ -23,17 +23,17 @@ public class SearchAnimationActivity extends AppCompatActivity {
     }
 
     private void move() {
-        animate(R.id.smallFile0, R.anim.move_small, false);
-        animate(R.id.smallFile1, R.anim.move_small, false);
-        animate(R.id.smallFile2, R.anim.move_small, false);
-        animate(R.id.smallFile3, R.anim.move_small, false);
-        animate(R.id.smallFile4, R.anim.move_small, false);
-        animate(R.id.smallFile5, R.anim.move_small, false);
-        animate(R.id.smallFile6, R.anim.move_small, true);
-        animate(R.id.smallFile7, R.anim.move_small, true);
+        animate(R.id.smallFile0, R.anim.small_file_move, false);
+        animate(R.id.smallFile1, R.anim.small_file_move, false);
+        animate(R.id.smallFile2, R.anim.small_file_move, false);
+        animate(R.id.smallFile3, R.anim.small_file_move, false);
+        animate(R.id.smallFile4, R.anim.small_file_move, false);
+        animate(R.id.smallFile5, R.anim.small_file_move, false);
+        animate(R.id.smallFile6, R.anim.small_file_move, true);
+        animate(R.id.smallFile7, R.anim.small_file_move, true);
 
-        animate(R.id.bigFile1, R.anim.move, false);
-        animate(R.id.bigFile2, R.anim.second_move, false);
+        animate(R.id.bigFile1, R.anim.big_file_move, false);
+        animate(R.id.bigFile2, R.anim.big_file_second_move, false);
     }
 
     private void animate(int imageViewResourceId, int animationResourceId, final boolean should) {
