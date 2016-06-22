@@ -59,7 +59,8 @@
             <com.apps.rs.views.CircleViewFrameLayout
                 android:layout_width="93dp"
                 android:layout_height="93dp"
-                android:id="@+id/bigFileFrame">
+                android:id="@+id/bigFileFrame"
+                android:layout_marginLeft="2dp">
 
                 <ImageView
                     android:id="@+id/bigFile1"

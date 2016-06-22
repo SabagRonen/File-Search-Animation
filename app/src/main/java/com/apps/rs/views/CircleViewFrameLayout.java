@@ -14,6 +14,7 @@ public class CircleViewFrameLayout extends FrameLayout {
 
     private Path mClipPath;
     private RectF mOval;
+    private int mClipMargin;
 
     public CircleViewFrameLayout(Context context) {
         super(context);
@@ -33,13 +34,15 @@ public class CircleViewFrameLayout extends FrameLayout {
     @Override
     protected void onDraw(Canvas canvas) {
         if (null == mOval) {
-            mOval = new RectF(20, 20, getWidth() - 20, getHeight() - 20);
+            mOval = new RectF(mClipMargin, mClipMargin, getWidth() - mClipMargin, getHeight() - mClipMargin);
         }
         mClipPath.addOval(mOval, Path.Direction.CW);
-        boolean b = canvas.clipPath(mClipPath);
+        canvas.clipPath(mClipPath);
     }
 
     private void init() {
+        setWillNotDraw(false);
+        mClipMargin = (int) (8 * getContext().getResources().getDisplayMetrics().density);
         mClipPath = new Path();
     }
 }

@@ -22,6 +22,13 @@ public class SearchAnimationActivity extends AppCompatActivity {
         setBigFileFrameClip();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        move();
+    }
+
     private void setBigFileFrameClip() {
         /***************************************************************************************
          * for pre lollipop we use custom frame layout (com.apps.rs.views.CircleViewFrameLayout)
@@ -43,13 +50,6 @@ public class SearchAnimationActivity extends AppCompatActivity {
             view.setClipToOutline(true);
         }
 
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        move();
     }
 
     private void move() {
