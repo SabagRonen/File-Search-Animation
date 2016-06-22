@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".SearchAnimationActivity">
 
     <RelativeLayout
@@ -56,10 +55,11 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/first">
 
-            <com.apps.rs.views.CircleViewFrameLayout
+            <FrameLayout
                 android:layout_width="93dp"
                 android:layout_height="93dp"
-                android:id="@+id/bigFileFrame">
+                android:id="@+id/bigFileFrame"
+                android:layout_marginLeft="2dp">
 
                 <ImageView
                     android:id="@+id/bigFile1"
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/big_file"
                     android:layout_gravity="center"/>
-            </com.apps.rs.views.CircleViewFrameLayout>
+            </FrameLayout>
 
             <ImageView
                 android:layout_width="wrap_content"

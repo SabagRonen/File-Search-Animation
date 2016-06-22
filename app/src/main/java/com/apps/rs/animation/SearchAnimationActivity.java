@@ -1,6 +1,8 @@
 package com.apps.rs.animation;
 
+import android.annotation.TargetApi;
 import android.graphics.Outline;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -17,14 +19,30 @@ public class SearchAnimationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_animation_activity);
 
-        View view = findViewById(R.id.bigFileFrame);
-        view.setOutlineProvider(new ViewOutlineProvider() {
-            @Override
-            public void getOutline(View view, Outline outline) {
-                outline.setOval(0, 0, view.getWidth(), view.getHeight());
+        setBigFileFrameClip();
+    }
+
+    private void setBigFileFrameClip() {
+        /***************************************************************************************
+         * for pre lollipop we use custom frame layout (com.apps.rs.views.CircleViewFrameLayout)
+         * to add the circle clip so the clipping done inside CircleViewFrameLayout, for lollipop
+         * and above we use ViewOutlineProvider
+         ***************************************************************************************/
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            View view = findViewById(R.id.bigFileFrame);
+            if (null == view) {
+                return;
             }
-        });
-        view.setClipToOutline(true);
+            view.setOutlineProvider(new ViewOutlineProvider() {
+                @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+                @Override
+                public void getOutline(View view, Outline outline) {
+                    outline.setOval(0, 0, view.getWidth(), view.getHeight());
+                }
+            });
+            view.setClipToOutline(true);
+        }
+
     }
 
     @Override
