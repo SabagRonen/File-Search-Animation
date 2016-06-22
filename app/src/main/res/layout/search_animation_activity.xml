@@ -56,22 +56,23 @@
             android:layout_toRightOf="@id/first">
 
             <FrameLayout
-                android:layout_width="85dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:paddingLeft="21dp">
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                android:id="@+id/bigFileFrame">
 
                 <ImageView
                     android:id="@+id/bigFile1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/big_file" />
+                    android:src="@drawable/big_file"
+                    android:layout_gravity="center"/>
 
                 <ImageView
                     android:id="@+id/bigFile2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/big_file" />
+                    android:src="@drawable/big_file"
+                    android:layout_gravity="center"/>
             </FrameLayout>
 
             <ImageView
