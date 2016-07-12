@@ -21,14 +21,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile0"
                 android:layout_marginLeft="@dimen/hiddenSmallFileMargin"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/photo" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile1"
                 android:layout_marginLeft="@dimen/smallFileMargin"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/photo" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
                 android:id="@+id/smallFile2"
                 android:layout_toRightOf="@id/smallFile1"
                 android:layout_marginLeft="@dimen/smallFileMargin"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/photo" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
                 android:id="@+id/smallFile3"
                 android:layout_marginLeft="@dimen/smallFileMargin"
                 android:layout_toRightOf="@id/smallFile2"
-                android:src="@drawable/small_doc"
+                android:src="@drawable/photo"
                 android:paddingRight="13dp" />
 
         </RelativeLayout>
@@ -65,14 +65,14 @@
                     android:id="@+id/bigFile1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/big_file"
+                    android:src="@drawable/big_happy"
                     android:layout_gravity="center"/>
 
                 <ImageView
                     android:id="@+id/bigFile2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/big_file"
+                    android:src="@drawable/big_happy"
                     android:layout_gravity="center"/>
             </FrameLayout>
 
@@ -94,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/smallFile4"
                 android:layout_marginLeft="@dimen/hiddenSmallFileMargin"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/photo" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -102,7 +102,7 @@
                 android:id="@+id/smallFile5"
                 android:layout_marginLeft="@dimen/smallFileMargin"
                 android:layout_toRightOf="@id/smallFile4"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/photo" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                 android:id="@+id/smallFile6"
                 android:layout_toRightOf="@id/smallFile5"
                 android:layout_marginLeft="@dimen/smallFileMargin"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/photo" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                 android:id="@+id/smallFile7"
                 android:layout_marginLeft="@dimen/smallFileMargin"
                 android:layout_toRightOf="@id/smallFile6"
-                android:src="@drawable/small_doc" />
+                android:src="@drawable/photo" />
 
         </RelativeLayout>
     </RelativeLayout>
