@@ -1,4 +1,4 @@
 # File Search Animation
-the show nice file search animation
+show how to create nice file search animation
 
 ![sample](/images/Animation.gif)
